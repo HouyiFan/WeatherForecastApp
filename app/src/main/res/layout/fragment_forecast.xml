@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="210dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        android:layout_centerVertical="true"
+        app:cardElevation="12dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--<ImageView-->
+                <!--android:id="@+id/forecastIconId"-->
+                <!--android:src="@android:drawable/ic_btn_speak_now"-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/forecastTempText"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:textSize="18sp"-->
+                <!--android:text="Temp:"-->
+                <!--android:layout_below="@id/forecastIconId"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--/>-->
+
+            <TextView
+                android:padding="15dp"
+                android:id="@+id/forecastDateText"
+                android:layout_below="@id/forecastDescriptionTextView"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:text="Monday, Oct. 2018"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/forecastHighText"
+                android:layout_below="@+id/forecastDateText"
+                android:drawableLeft="@android:drawable/arrow_up_float"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp"
+                android:text="High:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/forecastDateText"
+                android:layout_alignRight="@+id/forecastDateText"
+                />
+
+            <TextView
+                android:id="@+id/forecastLowText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forecastDateText"
+                android:layout_alignLeft="@+id/forecastDateText"
+                android:layout_alignStart="@id/forecastDateText"
+                android:drawableLeft="@android:drawable/arrow_down_float"
+                android:text="Low:"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/forecastDescriptionTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Mostly Cloudy"
+                android:textSize="23sp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
